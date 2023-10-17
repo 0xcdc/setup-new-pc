@@ -1,3 +1,11 @@
 # setup-new-pc
 # Usage
-curl -s https://raw.githubusercontent.com/0xcdc/setup-new-pc/main/setup-pc.sh | bash
+```Shell
+mkdir -p $HOME/github;
+cd $HOME/github;
+curl -LO https://github.com/0xcdc/setup-new-pc/archive/refs/heads/main.zip;
+unzip main.zip;
+rm main.zip;
+cd setup-new-pc;
+./setup-new-pc.sh
+```
