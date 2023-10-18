@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 source setup-pc-lib.sh
 
-apt_install curl git mysql-server vim vim-gtk3 vim-gui-common xclip virtualbox
+apt_install curl git mysql-server vim vim-gtk3 vim-gui-common xclip
 appendFileIfNotExists 'set -o vi' "$HOME/.bashrc"
 setupGit
 setupVim
