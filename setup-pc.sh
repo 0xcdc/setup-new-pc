@@ -3,9 +3,9 @@ source setup-pc-lib.sh
 
 apt_install curl git mysql-server vim vim-gtk3 vim-gui-common xclip virtualbox
 appendFileIfNotExists 'set -o vi' "$HOME/.bashrc"
-setup_git
-setup_vim
-setup_nvm
+setupGit
+setupVim
+setupNvm
 
 export NVM_DIR=$HOME/.nvm;
 source $NVM_DIR/nvm.sh;
